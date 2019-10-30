@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(6, 68, 139);
+    height: 100px;
+    text-align: center;
+    color: bisque;
+    line-height: 100px;
+    display: fixed;
+}
+
+nav {
+    background-color: #faf7f2;
+    height: 50px;
+    display: fixed;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li:hover {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(6, 68, 139);
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: teal;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+nav a:hover {
+    color: bisque;
+}
+
+main section {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+section p {
+    padding: 60px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 50%;
+}
+
+section img {
+    width: 100%;
+}
+
+.img-box {
+    width: 50%;
+}
+
+video {
+    margin: auto;
+}
+
+form p {
+    padding: 10px;
+}
+
+form {
+    background-color: teal;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(6, 68, 139);
+    color: bisque;
+    height: 50px;
+    line-height: 50px;
+
+}
+td{
+    outline: 1px solid rgb(6, 68, 139);
+    padding: 15px 10px;
+    
+}
+section .form-block p{
+    font-size: 14px;
+}
+table{
+    margin: auto;
+}
