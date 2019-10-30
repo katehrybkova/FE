@@ -108,3 +108,8 @@ section .form-block p{
 table{
     margin: auto;
 }
+.progress{
+text-align: center;
+margin-bottom: 50px;
+
+}
