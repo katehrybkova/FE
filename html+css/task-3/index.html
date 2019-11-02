@@ -7,6 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task 1</title>
     <link rel="stylesheet" href="style/main.css">
+    <script> 
+            window.onload = function() {
+             var drawingCanvas = document.getElementById('smile');
+             if(drawingCanvas && drawingCanvas.getContext) {
+              var context = drawingCanvas.getContext('2d');
+              // Рисуем окружность 
+              context.strokeStyle = "#000";
+              context.fillStyle = "#fc0";
+              context.beginPath();
+              context.arc(100,100,50,0,Math.PI*2,true);
+              context.closePath();
+              context.stroke();
+              context.fill();
+              // Рисуем левый глаз 
+              context.fillStyle = "#fff";
+              context.beginPath();
+              context.arc(84,90,8,0,Math.PI*2,true);
+              context.closePath();
+              context.stroke();
+              context.fill();
+              // Рисуем правый глаз 
+              context.beginPath();
+              context.arc(116,90,8,0,Math.PI*2,true);
+              context.closePath();
+              context.stroke();
+              context.fill();
+              // Рисуем рот
+              context.beginPath();
+              context.moveTo(70,105);
+              context.quadraticCurveTo(100,130,130,105);
+              context.quadraticCurveTo(100,150,70,105); 
+              context.closePath();
+              context.stroke();
+              context.fill();
+             }
+            }
+           </script>
 </head>
 
 <body>
@@ -179,13 +216,40 @@
                 </button>
             </p>
         </form>
-        <div class="progress">
-            <p>просто строка прогресса</p>
-            <progress value="22" max="100"></progress>
+        <div class="doubleBlock">
+
+            <div class="progress">
+                <p>просто строка прогресса</p>
+                <progress value="22" max="100"></progress>
+            </div>
+            <aside>
+                <h4>Тут может быть ваша реклама!</h4>
+                <p> Крайний срок подачи заявок на рекламу - <time datetime="2019-11-08 20:00">Следующая пятница</time>.
+                </p>
+            </aside>
+        </div>
+        <mark>
+            <p>
+                To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.
+            </p>
+        </mark>
+        <div class="doubleBlock">
+
+            <figure>
+                <img src="./img/69626726_472845356603374_3611782112539049984_n.jpg" alt="MEDITATION">
+                <figcaption>Пятое упражнение Фалунь Дафа</figcaption>
+            </figure>
+            <canvas id="smile" width="200" height="200">
+                <p>Ваш браузер не поддерживает рисование.</p>
+            </canvas>
         </div>
     </main>
     <footer>
-        <p>Служба поддержки данного сайта: hrybkova_kate@ukr.net</p>
+        <details>
+            <summary>Copyright 1999-2014.</summary>
+            <p> - by Refsnes Data. All Rights Reserved.</p>
+            <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+        </details>
     </footer>
 
     <script src="./script/script.js"></script>

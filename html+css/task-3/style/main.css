@@ -113,3 +113,16 @@ text-align: center;
 margin-bottom: 50px;
 
 }
+.doubleBlock{
+    display: flex;
+}
+.doubleBlock div, .doubleBlock aside, .doubleBlock figure{
+    width: 50%;
+}
+.doubleBlock canvas{
+    width: 30%;
+
+}
+figure img{
+    width: 250px;
+}
