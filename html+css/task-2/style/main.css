@@ -1,0 +1,26 @@
+.romanList{
+list-style: lower-roman;
+}
+.asciiList{
+  list-style: lower-latin;  
+}
+.decZerosList{
+    list-style: decimal-leading-zero;
+}
+.decList{
+    list-style: decimal;
+}
+.noBulList{
+    list-style: none;
+}
+.circleList{
+   list-style: circle; 
+}
+.squareList{
+    list-style: square;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+}
