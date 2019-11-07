@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+header,
+.headerLeftBlock {
+    display: flex;
+}
+
+header img {
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    left: -400px;
+    background-color: rgb(34, 44, 88);
+    top: 100px;
+    color: #FFF4E6;
+}
+
+
+header {
+    justify-content: space-between;
+    padding: 25px 10px;
+    background-color: rgb(164, 191, 207);
+}
+
+.headerLeftBlock {
+    justify-content: space-between;
+}
+
+.headerLeftBlock {
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    word-spacing: 1px;
+    color: #FFF4E6;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+#menu:checked~nav {
+    left: 0;
+}
+
+header input {
+    display: none;
+}
+
+ul ul {
+    display: none;
+    padding-left: 20px;
+}
+
+#about:checked~.secondMenuLevel,
+#about:checked~.secondMenuLevel,
+#info1:checked~.thirdMenuLevel,
+#info2:checked~.thirdMenuLevel,
+#info3:checked~.thirdMenuLevel {
+    display: block;
+}
+
+main {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.sectionAbout img {
+    width: 100%;
+
+}
+
+.sectionStaf {
+    padding: 25px 0;
+}
+
+.card {
+    padding: 25px 0;
+}
+
+.card img {
+    width: 100px;
+}
+
+.contactInfo {
+    background-color: rgb(164, 191, 207);
+    padding: 25px;
+    color: #FFF4E6;
+}
+
+.contacts {
+    display: flex;
+    padding: 10px;
+}
+
+
+.contactInfo img {
+    width: 70px;
+}
+
+.contactInfo address {
+    font-size: 12px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
